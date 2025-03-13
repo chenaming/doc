@@ -1,5 +1,6 @@
-site_name: 阿鸣的博客
+site_name: 阿鸣的笔记空间
 site_url: https://mydomain.org/mysite
+site_description: A blogging site
 theme:
   name: material
   font:
@@ -25,9 +26,27 @@ theme:
         name: light mode
       primary: blue
       accent: deep orange
-  
+
+plugins:
+  - search:
+  - blog:
+      enabled: true
+      blog_dir: .
+
+      archive_date_format: yyyy
+      archive_url_date_format: yyyy
+      post_url_format: "{slug}"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/chenaming
+
+
+
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
