@@ -20,7 +20,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: logo.ico
+
   favicon: logo.ico
   font:
     text: Merriweather Sans
@@ -66,7 +66,7 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true # link for each title
-      slugify: !!python/name:pymdownx.slugs.uslugify # enable Unicode link
+
   - admonition
   - abbr
   - attr_list
@@ -75,8 +75,7 @@ markdown_extensions:
   - tables
   - meta
   - md_in_html
-  - neoteroi.cards
-  - neoteroi.timeline
+
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -85,7 +84,6 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
