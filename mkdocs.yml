@@ -1,15 +1,37 @@
-site_name: 阿鸣的笔记空间
-site_url: https://mydomain.org/mysite
+site_name: 阿鸣的笔记
+site_url: https://chenaming.github.io/
 site_description: A blogging site
+repo_name: chenaming/阿鸣的笔记
+repo_url: https://github.com/chenaming/chenaming.github.io
+edit_uri: edit/main/docs/
+
 theme:
   name: material
+  logo: logo.ico
+  favicon: logo.ico
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  icon:
-    logo: fontawesome/solid/c
+  custom_dir: overrides
+
   features:
-    - navigation.footer
+    - content.action.edit # 编辑按钮
+    - content.action.view # 查看源代码按钮
+    - content.code.copy # 支持代码块复制
+    - navigation.footer # 上一页和下一页
+    - navigation.tabs # 一级导航在横着的导航栏
+    - content.code.annotate # 可以在代码块中增添点击展示的注释，参见 https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#adding-annotations
+    # - navigation.tracking # 地址栏中的 URL 会随当前位置变化为对应小节的 URL
+    - navigation.indexes # 将 index 页面直接附到小节名上
+    - navigation.top # 回到顶部按钮
+    # - navigation.sections # 二级导航是粗体
+    # - navigation.expand # 导航默认展开
+    - toc.follow # toc 跟随
+    # - toc.integrate # 文档 toc 集成到总目录中 
+    - search.suggest
+    - search.highlight
+    - search.share
+  language: 'zh'
   palette: 
     #Dark Mode
     - scheme: slate
@@ -38,9 +60,15 @@ plugins:
       post_url_format: "{slug}"
 
 extra:
+  analytics:
+    provider: google
+    property: G-JT9BRCXKJJ
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/chenaming
+    - icon: fontawesome/regular/envelope
+      link: mailto:<2680478465@qq.com> #联系方式
+      name: Email
 
 
 
@@ -64,10 +92,23 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
   - admonition
   - pymdownx.details
 
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+copyright: Copyright &copy; 2024 Chenaming
 
 
-copyright: Copyright &copy; 2024 James Willett
+
+
+
+
 
