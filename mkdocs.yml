@@ -2,7 +2,7 @@ site_name: 阿鸣的笔记
 site_url: https://chenaming.github.io/
 site_description: A blogging site
 repo_name: chenaming/阿鸣的笔记
-repo_url: https://github.com/chenaming/chenaming.github.io
+repo_url: https://github.com/chenaming/chenaming.github.io-main
 edit_uri: edit/main/docs/
 
 theme:
