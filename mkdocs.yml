@@ -1,9 +1,22 @@
+nav:
+  - Home: 
+    - index.md
+    - 关于我: home/about.md
+    - 项目介绍: project.md
+  - mkdocs: 
+    - 代码示例: mkdocs/code-examples.md
+    - 标签示例: mkdocs/content-tabs.md
+    - 图标示例: mkdocs/diagram-examples.md
+    - 警告示例: mkdocs/admonitions.md
+
+
 site_name: 阿鸣的笔记
 site_url: https://chenaming.github.io/
 site_description: A blogging site
 repo_name: chenaming/阿鸣的笔记
 repo_url: https://github.com/chenaming/chenaming.github.io-main
 edit_uri: edit/main/docs/
+
 
 theme:
   name: material
@@ -35,10 +48,10 @@ theme:
   palette: 
     #Dark Mode
     - scheme: slate
+      primary: black
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      primary: green
       accent: deep purple
 
     #Light Mode
@@ -49,15 +62,54 @@ theme:
       primary: blue
       accent: deep orange
 
-plugins:
-  - search:
-  - blog:
-      enabled: true
-      blog_dir: .
 
-      archive_date_format: yyyy
-      archive_url_date_format: yyyy
-      post_url_format: "{slug}"
+markdown_extensions:
+  - toc:
+      permalink: true # link for each title
+      slugify: !!python/name:pymdownx.slugs.uslugify # enable Unicode link
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - meta
+  - md_in_html
+  - neoteroi.cards
+  - neoteroi.timeline
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      # smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets: # 允许将其他文件内容插入文件，语法是 --8<-- "filename.ext" 等，参见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
+      auto_append:
+        - includes/abbreviations.md
+      base_path: ["docs"]
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra:
   analytics:
@@ -70,33 +122,7 @@ extra:
       link: mailto:<2680478465@qq.com> #联系方式
       name: Email
 
-
-
-markdown_extensions:
-  - attr_list
-  - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-  - admonition
-  - pymdownx.details
+copyright: Copyright &copy; 2024 Chenaming
 
 extra_css:
   - stylesheets/extra.css
@@ -104,7 +130,17 @@ extra_css:
 extra_javascript:
   - javascripts/extra.js
 
-copyright: Copyright &copy; 2024 Chenaming
+
+plugins:
+  - search:
+  - blog:
+      enabled: true
+      blog_dir: .
+
+      archive_date_format: yyyy
+      archive_url_date_format: yyyy
+      post_url_format: "{slug}"
+
 
 
 

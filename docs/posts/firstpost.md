@@ -5,9 +5,10 @@ categories:
     - Tech
 ---
 
-# My First Blog Post
+# 博客搭建历程
 
-This is the text for my first blog post
+参考https://squidfunk.github.io/mkdocs-material/
+
 
 <!-- more -->
 
