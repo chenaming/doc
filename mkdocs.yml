@@ -124,7 +124,7 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/chenaming
     - icon: fontawesome/regular/envelope
-      link: mailto:<2680478465@qq.com> #联系方式
+      link: mailto:chena_ming@outlook.com
       name: Email
 
 copyright: Copyright &copy; 2024 Chenaming
