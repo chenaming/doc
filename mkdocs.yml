@@ -2,12 +2,19 @@ nav:
   - Home: 
     - index.md
     - 关于我: home/about.md
-    - 项目介绍: project.md
+    - 项目介绍: 
+      - 毕业论文: project/GraduationThesis.md
+      - 嵌入式: project/embedded.md
   - mkdocs: 
     - 代码示例: mkdocs/code-examples.md
     - 标签示例: mkdocs/content-tabs.md
     - 图标示例: mkdocs/diagram-examples.md
     - 警告示例: mkdocs/admonitions.md
+  - 核心专业课:
+    - 数据结构: SpecializedCourse/datastructure/d.md
+    - 计算机组成: SpecializedCourse/computerzuchen/c.md
+    - 操作系统: SpecializedCourse/os/o.md
+    - 计算机网络: SpecializedCourse/internet/i.md
 
 
 site_name: 阿鸣的笔记
