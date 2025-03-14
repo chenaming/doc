@@ -9,5 +9,4 @@ categories:
 
 This is a blog post about some life updates...
 
-![home](life_home.png)
 
