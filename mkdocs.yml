@@ -11,10 +11,16 @@ nav:
     - 图标示例: mkdocs/diagram-examples.md
     - 警告示例: mkdocs/admonitions.md
   - 核心专业课:
-    - 数据结构: SpecializedCourse/datastructure/d.md
+    - 数据结构: 
+      - 绪论: SpecializedCourse/datastructure/xulun.md
     - 计算机组成: SpecializedCourse/computerzuchen/c.md
     - 操作系统: SpecializedCourse/os/o.md
     - 计算机网络: SpecializedCourse/internet/i.md
+  - 数学:
+    - 离散数学: math/Discretemathematics/set.md
+  - 机器学习:
+    - machinelearning/index.md
+
 
 
 site_name: 阿鸣的笔记
