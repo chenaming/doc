@@ -15,7 +15,24 @@ nav:
       - 绪论: SpecializedCourse/datastructure/xulun.md
     - 计算机组成: SpecializedCourse/computerzuchen/c.md
     - 操作系统: SpecializedCourse/os/o.md
-    - 计算机网络: SpecializedCourse/internet/i.md
+    - 计算机网络: 
+      - SpecializedCourse/internet/2.1 Principles of Network Applications.md
+      - SpecializedCourse/internet/2.2 The Web and HTTP.md
+      - SpecializedCourse/internet/2.3 Electronic Mail in the Internet.md
+      - SpecializedCourse/internet/2.4 DNS---The Internet's Directory Service.md
+      - SpecializedCourse/internet/2.5 Peer-to-Peer File Distribution.md
+      - SpecializedCourse/internet/3.1 Introduction and Transport-Layer Services.md
+      - SpecializedCourse/internet/3.2 Multiplexing and Demultiplexing.md
+      - SpecializedCourse/internet/3.3 Connectionless Transport UDP.md
+      - SpecializedCourse/internet/3.4 Principles of Reliable Data Transfer.md
+      - SpecializedCourse/internet/3.5 Connection-Oriented Transport TCP.md
+      - SpecializedCourse/internet/3.6 Principles of Congestion Control.md
+      - SpecializedCourse/internet/3.7 TCP Congestion Control.md
+      - SpecializedCourse/internet/4.1 Overview of Network Layer.md
+      - SpecializedCourse/internet/4.2 What's Inside a Router.md
+      - SpecializedCourse/internet/4.3 The Internet Protocol(IP) IPv4,Addressing,IPv6,and More.md
+      - SpecializedCourse/internet/4.4 Generalized Forwarding and SDN.md
+      - SpecializedCourse/internet/FTP.md
   - 数学:
     - 离散数学: math/Discretemathematics/set.md
   - 机器学习:
@@ -36,7 +53,7 @@ theme:
 
   favicon: logo.ico
   font:
-    text: Merriweather Sans
+    text: Comic Neue
     code: Red Hat Mono
   custom_dir: overrides
 
