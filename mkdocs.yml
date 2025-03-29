@@ -11,6 +11,23 @@ nav:
     - 图标示例: mkdocs/diagram-examples.md
     - 警告示例: mkdocs/admonitions.md
   - 核心专业课:
+    - 程序设计基础:
+      - SpecializedCourse/c/第1章 c语言概述.md
+      - SpecializedCourse/c/第2章 C语言基本概念.md
+      - SpecializedCourse/c/第3章 格式化输入输出.md
+      - SpecializedCourse/c/第4章 表达式.md
+      - SpecializedCourse/c/第5章 选择语句.md
+      - SpecializedCourse/c/第6章 循环.md
+      - SpecializedCourse/c/第7章 基本类型.md
+      - SpecializedCourse/c/第8章 数组.md
+      - SpecializedCourse/c/第9章 函数.md
+      - SpecializedCourse/c/第10章 程序结构.md
+      - SpecializedCourse/c/第11章 指针.md
+      - SpecializedCourse/c/第12章 指针和数组.md
+      - SpecializedCourse/c/第13章 字符串.md
+      - SpecializedCourse/c/第14章 预处理器.md
+      - SpecializedCourse/c/第16章 结构、联合和枚举.md
+      - SpecializedCourse/c/第17章 指针的高级应用.md
     - 数据结构: 
       - 绪论: SpecializedCourse/datastructure/xulun.md
       - SpecializedCourse/datastructure/2.4 线性表的顺序表示和实现.md
