@@ -13,7 +13,57 @@ nav:
   - 核心专业课:
     - 数据结构: 
       - 绪论: SpecializedCourse/datastructure/xulun.md
-    - 计算机组成: SpecializedCourse/computerzuchen/c.md
+      - SpecializedCourse/datastructure/2.4 线性表的顺序表示和实现.md
+      - SpecializedCourse/datastructure/2.5 线性表的链式表示和实现.md
+      - SpecializedCourse/datastructure/3.4 栈与递归.md
+      - SpecializedCourse/datastructure/6.1 图的定义和基本术语.md
+      - SpecializedCourse/datastructure/6.5 图的遍历.md
+      - SpecializedCourse/datastructure/6.6 最小生成树.md
+      - SpecializedCourse/datastructure/7.1 查找的基本概念.md
+      - SpecializedCourse/datastructure/7.3 树表的查找.md
+      - SpecializedCourse/datastructure/7.3.2 平衡二叉树.md
+      - SpecializedCourse/datastructure/7.4.1 散列表的基本概念.md
+      - SpecializedCourse/datastructure/8.1 基本概念和排序方法概述.md
+      - SpecializedCourse/datastructure/8.2 插入排序.md
+      - SpecializedCourse/datastructure/8.3 交换排序.md
+      - SpecializedCourse/datastructure/8.4选择排序.md
+      - SpecializedCourse/datastructure/8.5归并排序.md
+      - SpecializedCourse/datastructure/8.7 外部排序.md
+      - SpecializedCourse/datastructure/算法与算法分析.md
+    - 计算机组成: 
+      - SpecializedCourse/computerzuchen/4.1 存储器概述.md
+      - SpecializedCourse/computerzuchen/4.2 半导体存储器.md
+      - SpecializedCourse/computerzuchen/4.3 主存的组织及与CPU的连接.md
+      - SpecializedCourse/computerzuchen/4.4 并行主存系统.md
+      - SpecializedCourse/computerzuchen/4.5 高速缓冲存储器.md
+      - SpecializedCourse/computerzuchen/4.6虚拟存储器.md
+      - SpecializedCourse/computerzuchen/5.1 指令系统概述.md
+      - SpecializedCourse/computerzuchen/5.2 指令格式.md
+      - SpecializedCourse/computerzuchen/5.3 The Basics of Caches.md
+      - SpecializedCourse/computerzuchen/5.3 寻址方式.md
+      - SpecializedCourse/computerzuchen/5.4 指令类型.md
+      - SpecializedCourse/computerzuchen/5.5 指令格式设计.md
+      - SpecializedCourse/computerzuchen/5.6 CISC和RISC.md
+      - SpecializedCourse/computerzuchen/5.7 指令系统举例.md
+      - SpecializedCourse/computerzuchen/6.1 中央处理器概述.md
+      - SpecializedCourse/computerzuchen/6.2 指令周期.md
+      - SpecializedCourse/computerzuchen/6.3 数据通路及指令操作流程.md
+      - SpecializedCourse/computerzuchen/6.4 时序与控制.md
+      - SpecializedCourse/computerzuchen/6.5 硬布线控制器.md
+      - SpecializedCourse/computerzuchen/6.6 微程序控制器.md
+      - SpecializedCourse/computerzuchen/6.7 异常与中断处理.md
+      - SpecializedCourse/computerzuchen/8.1 总线概述.md
+      - SpecializedCourse/computerzuchen/8.2 总线传输机制.md
+      - SpecializedCourse/computerzuchen/8.3 总线结构.md
+      - SpecializedCourse/computerzuchen/8.4 常用总线.md
+      - SpecializedCourse/computerzuchen/9.1 输入输出设备与特性.md
+      - SpecializedCourse/computerzuchen/9.2 IO接口.md
+      - SpecializedCourse/computerzuchen/9.3 数据传输控制方式.md
+      - SpecializedCourse/computerzuchen/9.4 程序控制方式.md
+      - SpecializedCourse/computerzuchen/9.5 程序中断控制方式.md
+      - SpecializedCourse/computerzuchen/9.6 DMA方式.md
+      - SpecializedCourse/computerzuchen/9.7 通道方式(不考).md
+      - SpecializedCourse/computerzuchen/9.8 常见IO设备.md
     - 操作系统: 
       - SpecializedCourse/os/3.1 Process Concept.md
       - SpecializedCourse/os/3.2 Process Scheduling.md
@@ -52,11 +102,9 @@ nav:
       - SpecializedCourse/internet/4.3 The Internet Protocol(IP) IPv4,Addressing,IPv6,and More.md
       - SpecializedCourse/internet/4.4 Generalized Forwarding and SDN.md
       - SpecializedCourse/internet/FTP.md
-    - 数据库:
-      - SpecializedCourse/database/data1.md
+    - 数据库: SpecializedCourse/database/data1.md
   - 数学:
-    - 高等数学: 
-      - math/gaodengmath/1.md
+    - 高等数学: math/gaodengmath/1.md
     - 线性代数: 
       - 陈发来线性代数笔记: math/linearAlgebra/1.md
       - 李永乐强化笔记: math/linearAlgebra/2.md
