@@ -14,7 +14,26 @@ nav:
     - 数据结构: 
       - 绪论: SpecializedCourse/datastructure/xulun.md
     - 计算机组成: SpecializedCourse/computerzuchen/c.md
-    - 操作系统: SpecializedCourse/os/o.md
+    - 操作系统: 
+      - SpecializedCourse/os/3.1 Process Concept.md
+      - SpecializedCourse/os/3.2 Process Scheduling.md
+      - SpecializedCourse/os/3.3 Operations on Processes.md
+      - SpecializedCourse/os/3.4 Interprocess Communication.md
+      - SpecializedCourse/os/3.5 IPC In Shared-Memory Systems.md
+      - SpecializedCourse/os/3.6 IPC in Message-Passing Systems.md
+      - SpecializedCourse/os/3.7 3.8.md
+      - SpecializedCourse/os/4.1 Threads & Concurrency Overview.md
+      - SpecializedCourse/os/4.2 Multicore Programming.md
+      - SpecializedCourse/os/4.3 Multithreading Models.md
+      - SpecializedCourse/os/5.1 CPU Scheduling Basic Concepts.md
+      - SpecializedCourse/os/5.2 Scheduling Criteria.md
+      - SpecializedCourse/os/5.3 Scheduling Algorithms.md
+      - SpecializedCourse/os/7 Synchronization Examples.md
+      - SpecializedCourse/os/9 Main Memory.md
+      - SpecializedCourse/os/11 Mass-Storage Structure.md
+      - SpecializedCourse/os/Chapter 6 Synchronization Tools.md
+      - SpecializedCourse/os/Chapter 8 Deadlocks.md
+
     - 计算机网络: 
       - SpecializedCourse/internet/2.1 Principles of Network Applications.md
       - SpecializedCourse/internet/2.2 The Web and HTTP.md
@@ -33,8 +52,20 @@ nav:
       - SpecializedCourse/internet/4.3 The Internet Protocol(IP) IPv4,Addressing,IPv6,and More.md
       - SpecializedCourse/internet/4.4 Generalized Forwarding and SDN.md
       - SpecializedCourse/internet/FTP.md
+    - 数据库:
+      - SpecializedCourse/database/data1.md
   - 数学:
-    - 离散数学: math/Discretemathematics/set.md
+    - 高等数学: 
+      - math/gaodengmath/1.md
+    - 线性代数: 
+      - 陈发来线性代数笔记: math/linearAlgebra/1.md
+      - 李永乐强化笔记: math/linearAlgebra/2.md
+    - 离散数学: 
+      - 集合论与图论: math/Discretemathematics/set.md
+      - 数理逻辑: math/Discretemathematics/logic.md
+      - 抽象代数: math/Discretemathematics/3.md
+    - 概率论与数理统计: math/probability/1.md
+
   - 机器学习:
     - machinelearning/index.md
 
