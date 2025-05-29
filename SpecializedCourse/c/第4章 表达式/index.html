@@ -1,0 +1,4972 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A blogging site">
+      
+      
+      
+        <link rel="canonical" href="https://chenaming.github.io/SpecializedCourse/c/%E7%AC%AC4%E7%AB%A0%20%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC3%E7%AB%A0%20%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC5%E7%AB%A0%20%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5/">
+      
+      
+      <link rel="icon" href="../../../logo.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>第四章表达式 - 阿鸣的笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Comic Neue";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-JT9BRCXKJJ"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-JT9BRCXKJJ",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-JT9BRCXKJJ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="阿鸣的笔记" class="md-header__button md-logo" aria-label="阿鸣的笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            阿鸣的笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第四章表达式
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chenaming/chenaming.github.io-main" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenaming/阿鸣的笔记
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mkdocs/code-examples/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  mkdocs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E7%AC%AC1%E7%AB%A0%20c%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  核心专业课
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../math/gaodengmath/1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  数学
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="阿鸣的笔记" class="md-nav__button md-logo" aria-label="阿鸣的笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    阿鸣的笔记
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chenaming/chenaming.github.io-main" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    chenaming/阿鸣的笔记
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../home/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于我
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    项目介绍
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            项目介绍
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/GraduationThesis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    毕业论文
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/embedded/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    嵌入式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    归档
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            归档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    分类
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            分类
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../category/tech/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tech
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../category/life/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    life
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    mkdocs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            mkdocs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mkdocs/code-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    代码示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mkdocs/content-tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    标签示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mkdocs/diagram-examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图标示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mkdocs/admonitions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    警告示例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    核心专业课
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            核心专业课
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    程序设计基础
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            程序设计基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC1%E7%AB%A0%20c%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第一章 c语言概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC2%E7%AB%A0%20C%E8%AF%AD%E8%A8%80%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第2章 C语言基本概念
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC3%E7%AB%A0%20%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第三章 格式化输入输出
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    第四章表达式
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    第四章表达式
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1算术运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1算术运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算符的优先级和结合性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 赋值运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 赋值运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 简单赋值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 左值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 复合赋值
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 自增运算符和自减运算符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 表达式求值
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 表达式求值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      子表达式的求值顺序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 表达式语句
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      问与答
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC5%E7%AB%A0%20%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第五章 选择语句
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC6%E7%AB%A0%20%E5%BE%AA%E7%8E%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第六章循环
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC7%E7%AB%A0%20%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第七章基本类型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC8%E7%AB%A0%20%E6%95%B0%E7%BB%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第八章数组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC9%E7%AB%A0%20%E5%87%BD%E6%95%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第九章 函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0%20%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第十章 程序结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC11%E7%AB%A0%20%E6%8C%87%E9%92%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第十一章 指针
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0%20%E6%8C%87%E9%92%88%E5%92%8C%E6%95%B0%E7%BB%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第12章 指针和数组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0%20%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第13章 字符串
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC14%E7%AB%A0%20%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第14章 预处理器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC16%E7%AB%A0%20%E7%BB%93%E6%9E%84%E3%80%81%E8%81%94%E5%90%88%E5%92%8C%E6%9E%9A%E4%B8%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第16章 结构、联合和枚举
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC17%E7%AB%A0%20%E6%8C%87%E9%92%88%E7%9A%84%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    第17章 指针的高级应用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    数据结构
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            数据结构
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/xulun/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    绪论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/2.4%20%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 线性表的顺序表示和实现
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/2.5%20%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%93%BE%E5%BC%8F%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%AE%9E%E7%8E%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.5 线性表的链式表示和实现
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/3.4%20%E6%A0%88%E4%B8%8E%E9%80%92%E5%BD%92/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4 栈与递归
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/6.1%20%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.1 图的定义和基本术语
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/6.5%20%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.5 图的遍历
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/6.6%20%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.6 最小生成树
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/7.1%20%E6%9F%A5%E6%89%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.1 查找的基本概念
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/7.3%20%E6%A0%91%E8%A1%A8%E7%9A%84%E6%9F%A5%E6%89%BE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.3 树表的查找
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/7.3.2%20%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.3.2 平衡二叉树
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/7.4.1%20%E6%95%A3%E5%88%97%E8%A1%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.4.1 散列表的基本概念
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/8.1%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%8E%92%E5%BA%8F%E6%96%B9%E6%B3%95%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.1 基本概念和排序方法概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/8.2%20%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.2 插入排序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/8.3%20%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.3 交换排序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/8.4%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.4选择排序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/8.5%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.5归并排序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/8.7%20%E5%A4%96%E9%83%A8%E6%8E%92%E5%BA%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.7 外部排序
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datastructure/%E7%AE%97%E6%B3%95%E4%B8%8E%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    算法与算法分析
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    计算机组成
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            计算机组成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/4.1%20%E5%AD%98%E5%82%A8%E5%99%A8%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.1 存储器概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/4.2%20%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%AD%98%E5%82%A8%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2 半导体存储器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/4.3%20%E4%B8%BB%E5%AD%98%E7%9A%84%E7%BB%84%E7%BB%87%E5%8F%8A%E4%B8%8ECPU%E7%9A%84%E8%BF%9E%E6%8E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.3 主存的组织及与CPU的连接
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/4.4%20%E5%B9%B6%E8%A1%8C%E4%B8%BB%E5%AD%98%E7%B3%BB%E7%BB%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.4 并行主存系统
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/4.5%20%E9%AB%98%E9%80%9F%E7%BC%93%E5%86%B2%E5%AD%98%E5%82%A8%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.5 高速缓冲存储器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/4.6%E8%99%9A%E6%8B%9F%E5%AD%98%E5%82%A8%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.6虚拟存储器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.1%20%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.1 指令系统概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.2%20%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.2 指令格式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.3%20The%20Basics%20of%20Caches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.3 The Basics of Caches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.3%20%E5%AF%BB%E5%9D%80%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.3 寻址方式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.4%20%E6%8C%87%E4%BB%A4%E7%B1%BB%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.4 指令类型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.5%20%E6%8C%87%E4%BB%A4%E6%A0%BC%E5%BC%8F%E8%AE%BE%E8%AE%A1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.5 指令格式设计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.6%20CISC%E5%92%8CRISC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.6 CISC和RISC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/5.7%20%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F%E4%B8%BE%E4%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.7 指令系统举例
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.1%20%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.1 中央处理器概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.2%20%E6%8C%87%E4%BB%A4%E5%91%A8%E6%9C%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.2 指令周期
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.3%20%E6%95%B0%E6%8D%AE%E9%80%9A%E8%B7%AF%E5%8F%8A%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.3 数据通路及指令操作流程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.4%20%E6%97%B6%E5%BA%8F%E4%B8%8E%E6%8E%A7%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.4 时序与控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.5%20%E7%A1%AC%E5%B8%83%E7%BA%BF%E6%8E%A7%E5%88%B6%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.5 硬布线控制器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.6%20%E5%BE%AE%E7%A8%8B%E5%BA%8F%E6%8E%A7%E5%88%B6%E5%99%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.6 微程序控制器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/6.7%20%E5%BC%82%E5%B8%B8%E4%B8%8E%E4%B8%AD%E6%96%AD%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.7 异常与中断处理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/8.1%20%E6%80%BB%E7%BA%BF%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.1 总线概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/8.2%20%E6%80%BB%E7%BA%BF%E4%BC%A0%E8%BE%93%E6%9C%BA%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.2 总线传输机制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/8.3%20%E6%80%BB%E7%BA%BF%E7%BB%93%E6%9E%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.3 总线结构
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/8.4%20%E5%B8%B8%E7%94%A8%E6%80%BB%E7%BA%BF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.4 常用总线
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.1%20%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87%E4%B8%8E%E7%89%B9%E6%80%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.1 输入输出设备与特性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.2%20IO%E6%8E%A5%E5%8F%A3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.2 IO接口
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.3%20%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.3 数据传输控制方式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.4%20%E7%A8%8B%E5%BA%8F%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.4 程序控制方式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.5%20%E7%A8%8B%E5%BA%8F%E4%B8%AD%E6%96%AD%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.5 程序中断控制方式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.6%20DMA%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.6 DMA方式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.7%20%E9%80%9A%E9%81%93%E6%96%B9%E5%BC%8F%28%E4%B8%8D%E8%80%83%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.7 通道方式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../computerzuchen/9.8%20%E5%B8%B8%E8%A7%81IO%E8%AE%BE%E5%A4%87/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.8 常见I/O设备
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    操作系统
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            操作系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.1%20Process%20Concept/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1 Process Concept
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.2%20Process%20Scheduling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.2 Process Scheduling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.3%20Operations%20on%20Processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.3 Operations on Processes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.4%20Interprocess%20Communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4 Interprocess Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.5%20IPC%20In%20Shared-Memory%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.5 IPC In Shared-Memory Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.6%20IPC%20in%20Message-Passing%20Systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.6 IPC in Message-Passing Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/3.7%203.8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.7 Examples of IPC Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/4.1%20Threads%20%26%20Concurrency%20Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.1 Threads & Concurrency Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/4.2%20Multicore%20Programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2 Multicore Programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/4.3%20Multithreading%20Models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.3 Multithreading Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/5.1%20CPU%20Scheduling%20Basic%20Concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.1 CPU Scheduling Basic Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/5.2%20Scheduling%20Criteria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.2 Scheduling Criteria
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/5.3%20Scheduling%20Algorithms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.3 Scheduling Algorithms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/7%20Synchronization%20Examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7 Synchronization Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/9%20Main%20Memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9 Main Memory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/11%20Mass-Storage%20Structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11 Mass-Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/Chapter%206%20Synchronization%20Tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chapter 6 Synchronization Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../os/Chapter%208%20Deadlocks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.1 System Model
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    计算机网络
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            计算机网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/2.1%20Principles%20of%20Network%20Applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.1 Principles of Network Applications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/2.2%20The%20Web%20and%20HTTP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.2 The Web and HTTP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/2.3%20Electronic%20Mail%20in%20the%20Internet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.3 Electronic Mail in the Internet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/2.4%20DNS---The%20Internet%27s%20Directory%20Service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.4 DNS---The Internet's Directory Service
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/2.5%20Peer-to-Peer%20File%20Distribution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.5 Peer-to-Peer File Distribution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.1%20Introduction%20and%20Transport-Layer%20Services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.1 Introduction and Transport-Layer Services
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.2%20Multiplexing%20and%20Demultiplexing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.2 Multiplexing and Demultiplexing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.3%20Connectionless%20Transport%20UDP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.3 Connectionless Transport: UDP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.4%20Principles%20of%20Reliable%20Data%20Transfer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.4 Principles of Reliable Data Transfer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.5%20Connection-Oriented%20Transport%20TCP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.5 Connection-Oriented Transport: TCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.6%20Principles%20of%20Congestion%20Control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.6 Principles of Congestion Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/3.7%20TCP%20Congestion%20Control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.7 TCP Congestion Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/4.1%20Overview%20of%20Network%20Layer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.1 Overview of Network Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/4.2%20What%27s%20Inside%20a%20Router/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.2 What's Inside a Router?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/4.3%20The%20Internet%20Protocol%28IP%29%20IPv4%2CAddressing%2CIPv6%2Cand%20More/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.3 The Internet Protocol(IP):IPv4,Addressing,IPv6,and More
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/4.4%20Generalized%20Forwarding%20and%20SDN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.4 Generalized Forwarding and SDN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../internet/FTP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FTP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../database/data1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数据库
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    数学
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            数学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/gaodengmath/1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    高等数学
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    线性代数
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            线性代数
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/linearAlgebra/1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    陈发来线性代数笔记
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/linearAlgebra/2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    李永乐强化笔记
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    离散数学
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            离散数学
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/Discretemathematics/set/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    集合论与图论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/Discretemathematics/logic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数理逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/Discretemathematics/3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    抽象代数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/probability/1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概率论与数理统计
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1算术运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1算术运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      运算符的优先级和结合性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 赋值运算符
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 赋值运算符">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.1 简单赋值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.2 左值
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2.3 复合赋值
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 自增运算符和自减运算符
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 表达式求值
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 表达式求值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      子表达式的求值顺序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.5 表达式语句
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      问与答
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/chenaming/chenaming.github.io-main/edit/main/docs/SpecializedCourse/c/第4章 表达式.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/chenaming/chenaming.github.io-main/raw/main/docs/SpecializedCourse/c/第4章 表达式.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="_1">第四章表达式<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>C语言的一个特点就是它更多地强调表达式而不是语句。表达式是表示如何计算值的公式。最简单的表达式是变量和常量。变量表示程序运行时需要计算的值，常量表示不变的值，更加复杂的表达式把运算符用于操作数（操作数自身就是表达式）
+在表达式a+(b<em>c)中，运算符+用于操作数a和(b</em>c)，而这两者又都是表达式。
+运算符是构建表达式的基本工具，C语言拥有异常丰富的运算符。
+表达式由运算符和算子组成。</p>
+<ul>
+<li>算术运算符，包括加、减、乘、除（4.1节）</li>
+<li>关系运算符进行诸如“i比0大”这样的比较运算。</li>
+<li>逻辑运算符实现诸如“i比0大并且i比10小”这样的关系运算。</li>
+</ul>
+<p>赋值运算符，自增自减运算符......</p>
+<h2 id="41">4.1算术运算符<a class="headerlink" href="#41" title="Permanent link">&para;</a></h2>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/direct/4e00effba416435cb31b3f545766508f.png#pic_center" />
+加法类运算符和乘法类运算符都属于二元运算符，因为它们需要两个操作数。一元运算符只需要一个操作数：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="w">   </span><span class="cm">/* + used as a unary operator */</span>
+<span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w">   </span><span class="cm">/* - used as a unary operator */</span>
+</code></pre></div>
+一元运算符+什么都不做；实际上，经典C中甚至不存在这种运算符。它主要用于强调某数值常量是正的。
+除%运算符以外，表4-1中的二元运算符既允许操作数是整数也允许操作数是浮点数，两者混合也是可以的。当把int型操作数和float操作数混合在一起时，运算结果是float型的。因此，9+2.5f的值为11.5，而6.7f/2的值为3.35.</p>
+<p>运算符/和运算符%需要特别注意以下几点。</p>
+<ul>
+<li>运算符/可能产生意外的结果。当两个操作数都是整数时，运算符/会丢掉分数部分来“截取”结果。因此&frac12;的结果是0而不是0.5。</li>
+<li>运算符%要求操作数是整数。如果两个操作数中有一个不是整数，程序将无法编译通过。</li>
+<li>把==0用作/或%的右操作数会导致未定义的行为==（4.4节）</li>
+<li>当运算符/和运算符%用于负操作数时，其结果难以确定。根据C89标准，如果两个操作数中有一个为负数，那么除法的结果既可以向上舍入也可以向下舍入。（例如，-9/7的结果既可以是-1也可以是-2）在C89中，如果i或者j是负数，i%j的符号与具体实现有关。（例如，-9%7的值可能是-2或者5）
+但是在C99中，除法的结果总是趋零截尾的（因此-9/7的结果是-1），i%j的值的符号与i的相同（因此-9%7的值为-2）</li>
+</ul>
+<hr />
+<center>"由实现定义"（implementation-defined)的行为</center>
+<p>C标准故意对C语言的部分内容未加指定，并认为其细节可以由“实现”来具体定义。所谓实现是指程序在特定的平台上编译、链接和执行所需要的软件。因此，根据实现的不同，程序的行为可能会稍有差异。C89中运算符/和运算符%对负操作数的行为就是一个由实现定义行为的例子。</p>
+<hr />
+<h3 id="_2">运算符的优先级和结合性<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>运算符优先级（operator precedence）
+最高优先级：+  -（一元运算符） *  /   %
+最低优先级： +   -（二元运算符）
+当表达式包含两个或更多个相同优先级的运算符时，仅有运算符优先级规则是不够用的。这种情况下，运算符的结合性（associativity）开始发挥作用。如果运算符是从左向右结合的，那么称这种运算符是左结合的（left associative）。
+二元算术运算符（即*、/、%、+和-）都是左结合的，所以
+i - j - k   等价于  (i - j) - k
+i * j / k   等价于 (i * j) / k
+如果运算符是从右向左结合的，那么称这种运算符是右结合的（right associative）。一元算术运算符（+和-）都是右结合的，所以- + i 等价于  -(+i)</p>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/direct/46bc10fd00a54768915799bdc46bee9c.png#pic_center" />
+下面是一种计算校验位的方法：
+首先把第一位、第三位、第五位、第七位、第九位和第十一位数字相加；然后把第二位、第四位、第六位、第八位和第十位数字相加；接着把第一次加法的结果乘以3，再和第二次加法的结果相加；随后再把上述结果减去1；相减后的结果除以10取余数；最后用9减去上一步骤中得到的余数。
+编写一个程序来计算任意通用产品代码的校验位。要求用户输入通用产品代码的前11位数字，然后程序显示出相应的校验位。为了避免混淆，要求用户分3部分输入数字：左边的第一个数字、第一组5位数字以及第二组5位数字。
+程序不是按一个5位数来读取每组5位数字的，而是将它们读作5个1位数。把数看成一个个独立的数字来读取更为方便，而且也无需担心由于5位数过大而无法存储到int型变量中。（某些编译器限定int型变量的最大值为32767。）为了读取单个的数字，我们使用带有%1d转换说明的scanf函数，其中%1d匹配只有1位的整数。</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">i1</span><span class="p">,</span><span class="w"> </span><span class="n">i2</span><span class="p">,</span><span class="w"> </span><span class="n">i3</span><span class="p">,</span><span class="w"> </span><span class="n">i4</span><span class="p">,</span><span class="w"> </span><span class="n">i5</span><span class="p">,</span><span class="w"> </span><span class="n">j1</span><span class="p">,</span><span class="w"> </span><span class="n">j2</span><span class="p">,</span><span class="w"> </span><span class="n">j3</span><span class="p">,</span><span class="w"> </span><span class="n">j4</span><span class="p">,</span><span class="w"> </span><span class="n">j5</span><span class="p">,</span>
+<span class="w">      </span><span class="n">first_sum</span><span class="p">,</span><span class="w"> </span><span class="n">second_sum</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter the first (single) digit: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%1d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">d</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter first group of five digits: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%1d%1d%1d%1d%1d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i3</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i4</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">i5</span><span class="p">);</span>
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Enter second group of five digits: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%1d%1d%1d%1d%1d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">j1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">j2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">j3</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">j4</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">j5</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">first_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i4</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j5</span><span class="p">;</span>
+<span class="w">  </span><span class="n">second_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j4</span><span class="p">;</span>
+<span class="w">  </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">first_sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">second_sum</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Check digit: %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">((</span><span class="n">total</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">10</span><span class="p">));</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="42">4.2 赋值运算符<a class="headerlink" href="#42" title="Permanent link">&para;</a></h2>
+<p>求出表达式的值以后，通常需要将其存储到变量中，以便将来使用。
+C语言的=[简单赋值(simple assignment)]运算符可以用于此目的。
+C语言还提供了一种复合赋值（compound assignment）运算符</p>
+<h3 id="421">4.2.1 简单赋值<a class="headerlink" href="#421" title="Permanent link">&para;</a></h3>
+<p>表达式v=e的赋值效果是求出表达式e的值，并把此值复制到v。e可以是常量、变量或更为复杂的表达式，比如：
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="n">j</span><span class="p">;</span>
+</code></pre></div>
+如果v和e的类型不同，那么赋值运算发生时会把e的值转换为v的类型：</p>
+<p><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="p">;</span>
+
+<span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">72.99f</span><span class="p">;</span><span class="w">  </span><span class="cm">/* i is now 72 */</span>
+<span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">136</span><span class="p">;</span><span class="w">     </span><span class="cm">/* f is now 136.0 */</span>
+</code></pre></div>
+类型转换的问题（7.4节）以后再讨论。
+在许多编程语言中，赋值是语句；然而，在C语言中，赋值就像+那样是运算符。换句话说，赋值操作产生结果，就如同两个数相加产生结果一样。赋值表达式v=e的值就是赋值运算后v的值。因此，表达式i=72.99f的值是72（不是72.99）</p>
+<hr />
+<center>副作用</center>
+<p>通常我们不希望运算符修改他们的操作数，数学中的运算符就是如此。表达式i+j不会改变i或j的值，只是计算出i加j的结果。
+大多数C语言运算符不会改变操作数的值，但是也有一些改变。由于这类运算符所做的不再仅仅是计算出值，因此称它们有副作用（side effect）。简单赋值运算符是已知的第一个有副作用的运算符，它改变了运算符的左操作数。对表达式i=0求值产生的结果为0，并（作为副作用）把0赋值给i。</p>
+<hr />
+<p>既然赋值是运算符，那么多个赋值可以串联在一起：
+i = j = k = 0;
+运算符=是右结合的，因此上述赋值表达式等价于
+i = (j = (k = 0));
+作用是先把0赋值给k，再把表达式k=0的值赋值给j，最后把表达式j = (k = 0)的值赋值给i</p>
+<hr />
+<p>注意，由于存在类型转换，串在一起的赋值运算最终结果可能不是预期的结果：</p>
+<p><div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">f</span><span class="p">;</span>
+
+<span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">33.3f</span><span class="p">;</span>
+</code></pre></div>
+首先把数值33赋值给变量i，然后把33.0（而不是预期的33.3）赋值给变量f。</p>
+<hr />
+<p>通常情况下，可以使用v类型值的地方都可以进行形如v=e的赋值。在下面的例子中，表达式j=i把i的值复制给j，然后再将表达式j=i的值（等于j的新值）加上1，得到k的新值：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d %d %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">);</span><span class="w">    </span><span class="cm">/*printf &quot;1 1 2&quot; */</span>
+</code></pre></div>
+但是，按照上述这种形式使用赋值运算符通常不是一个好主意。</p>
+<ol>
+<li>“<mark>嵌入式赋值</mark>”不便于程序的阅读</li>
+<li>4.4节将看到，这样做也是潜在错误的根源</li>
+</ol>
+<h3 id="422">4.2.2 左值<a class="headerlink" href="#422" title="Permanent link">&para;</a></h3>
+<p>大多数C语言运算符允许它们的操作数是变量、常量或者包含其他运算符的表达式。然而，赋值运算符要求它的左操作数必须是左值（lvalue）。左值表示对象，而不是常量或计算的结果。变量是左值，而诸如10或2*i这样的表达式则不是左值。目前为止，变量是已知的唯一左值。在后面的章节中，我们将介绍其他类型的左值。
+既然赋值运算符要求左操作数是左值，那么在赋值表达式的左侧放置任何其他类型的表达式都是不合法的：</p>
+<p><div class="highlight"><pre><span></span><code><span class="mi">12</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w">      </span><span class="cm">/*** WRONG ***/</span>
+<span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="cm">/*** WRONG ***/</span>
+<span class="o">-</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="p">;</span><span class="w">     </span><span class="cm">/*** WRONG ***/</span>
+</code></pre></div>
+编译器会检测出这种错误，并给出"invalid lvalue in assignment"这样的出错信息</p>
+<h3 id="423">4.2.3 复合赋值<a class="headerlink" href="#423" title="Permanent link">&para;</a></h3>
+<p>利用变量的原有值计算出新值并重新赋值给这个变量。</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="c1">//把变量i的值加上2后再赋值给它自己</span>
+</code></pre></div>
+C语言的复合赋值运算符允许缩短这个语句以及类似的语句。使用+=运算符，可以将上面的表达式简写为</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="cm">/* same as i = i + 2; */</span>
+</code></pre></div>
+还有另外9种复合赋值运算符，包括-=   *=  /=  %=
+其他复合赋值运算符（20.1节）将在后面的章节中介绍。</p>
+<p>注意，这里没有说v+=e“等价于”v=v+e。问题在于运算符的优先级：
+表达式i <em>= j + k和表达式i = i</em>j + k是不一样的。在极少数情况下，由于v自身的副作用，v+=e也不等同于v=v+e。</p>
+<hr />
+<p>在使用复合赋值运算符时，注意不要交换组成运算符的两个字符的位置。交换字符位置产生的表达式也许可以被编译器接受，但不会有预期的意义。例如，原本打算写表达式i +=j，却写成了i =+j，程序也能够通过编译。但是，后一个表达式i=+j等价于表达式i=(+j)，只是简单地把j的值赋给i。</p>
+<hr />
+<p>复合赋值运算符有着和=运算符一样的特性。具体来说，他们都是右结合的，因此语句i += j += k;
+意味着i += (j+=k);</p>
+<h2 id="43">4.3 自增运算符和自减运算符<a class="headerlink" href="#43" title="Permanent link">&para;</a></h2>
+<p>最常用于变量的两种运算是“自增"（加1）和”自减“（减1）。当然，也可以通过下列方式完成这类操作：
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+复合赋值运算符可以将上述这些语句缩短一些：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">j</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+而C语言允许用++（自增）和--（自减）运算符将这些语句缩的更短些。
+++和--运算符既可以作为前缀（prefix）运算符（如++i和--i）也可以作为后缀（postfix）运算符（如i++和i--）使用。
+造成运算符的使用如此复杂的另一个原因是，和赋值运算符一样，++和--也有副作用：他们会改变操作数的值。计算表达式++i的结果是i+1，而副作用的效果是自增i：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;i is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="o">++</span><span class="n">i</span><span class="p">);</span><span class="w">    </span><span class="cm">/* prints &quot;i is 2&quot; */</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;i is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span><span class="w">     </span><span class="cm">/* prints &quot;i is 2&quot; */</span>
+</code></pre></div>
+计算表达式i++("后缀自增“）的结果是i，但是会引发i随后进行自增：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;i is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">);</span><span class="w">    </span><span class="cm">/* prints &quot;i is 1&quot; */</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;i is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">);</span><span class="w">       </span><span class="cm">/* prints &quot;i is 2&quot; */</span>
+</code></pre></div>
+第一个printf函数显示了i自增前的原始值，第二个printf函数显示了i变化后的新值。正如这些例子所说明的那样，++i意味着”立即自增i“，i++意味着”现在先用i的原始值，稍后再自增i“。这个”稍后“右多久呢？C语言标准没有给出精确的时间，但是可以放心地假设i将在下一条语句执行前进行自增。</p>
+<p>在同一个表达式中多次使用++或--运算符，结果往往很难理解。思考下列语句：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">;</span>
+</code></pre></div>
+在上述语句执行后，i、j和k的值分别是多少呢？因为i是在值被使用前进行自增，而j是在值被使用后进行自增，所以最后一个语句等价于
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">j</span><span class="p">;</span>
+<span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+因此，最终i、j和k的值分别是2、3和4
+需要记住的是，后缀++和后缀--比一元的正号和负号优先级高，而且这两个后缀都是左结合的。前缀++和前缀--与一元的正号和负号优先级相同，而且这两个前缀都是右结合的。</p>
+<h2 id="44">4.4 表达式求值<a class="headerlink" href="#44" title="Permanent link">&para;</a></h2>
+<p><img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/direct/62409799b4f24becb9206317a9f1f562.png#pic_center" />
+<img alt="在这里插入图片描述" src="https://img-blog.csdnimg.cn/direct/e922d776df7a402f81f6f8e2648b2b8a.png#pic_center" />
+该表用途广泛，先看其中的一种用途，假设我们读某人的程序时遇到类似这样的复杂表达式：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">c</span><span class="o">++</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">--</span><span class="n">e</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">-</span><span class="n">f</span>
+</code></pre></div>
+用作后缀运算符的++具有最高优先级，因此在后缀++和相关操作数的周围加上圆括号：
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="o">--</span><span class="n">e</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">-</span><span class="n">f</span>
+</code></pre></div>
+现在在表达式中发现了前缀--运算符和一元负号运算符（优先级都为2）：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="o">--</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="p">)</span>
+</code></pre></div>
+注意，另外一个负号的左侧紧挨着一个操作数，因此这个运算符一定是减法运算符，而不是一元负号运算符。
+接下来，注意到运算符/（优先级为3）：
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="o">--</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="p">))</span>
+</code></pre></div>
+这个表达式包含两个优先级为4的运算符：减号和加号。当两个具有相同优先级的运算符和同一个操作数相邻时，需要注意运算结合性。在此例中，-运算符和+运算符都和d相邻，因此应用结合性规则。-运算符和+运算符都是自左向右结合，因此圆括号先括减号，然后再括加号：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(((</span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="o">--</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="p">)))</span>
+</code></pre></div>
+最后剩下运算符=和运算符+=。这两个运算符都和b相邻，因此必须考虑运算结合性。赋值运算符从右向左结合，因此括号先加在表达式+=周围，然后加在表达式=周围：</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(((</span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">((</span><span class="o">--</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">f</span><span class="p">)))))</span>
+</code></pre></div>
+<h3 id="_3">子表达式的求值顺序<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>有了运算符的优先级和结合性规则，我们就可以将任何C语言表达式划分成子表达式。如果表达式是完全括号化的，那么这些规则还可以确定唯一的添加圆括号的方式。与之相矛盾的是，这些规则并不总是允许我们确定表达式的值，表达式的值可能依赖于子表达式的求值顺序。
+C语言没有定义子表达式的求值顺序【除了含有逻辑与运算符及逻辑或运算符（5.1节）、条件运算符（5.2节）以及逗号运算符（6.3节）的子表达式】。
+因此，在表达式(a+b)*(c-d)中，无法确定子表达式（a+b)是否在子表达式（c-d）之前求值。
+不管子表达式的计算顺序如何，大多数表达式有相同的值。但是，当子表达式改变了某个操作数的值时，产生的值可能就不一致了。思考下面这个例子：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</code></pre></div>
+第二条语句的执行结果是未定义的，C标准没有规定。对大多数编译器而言，c的值是6或者2.
+如果先计算子表达式(b = a + 2)，那么b的值为7，c的值为6。但是，如果先计算子表达式（a=1），那么b的值为3，c的值为2。</p>
+<hr />
+<p>在表达式中，既在某处访问变量的值又在别处修改它的值是不可取的。表达式(b=a+2)-(a=1)既访问了a的值（为了计算a+2），又（通过赋值为1）修改了a的值。有些编译器在遇到这样的表达式时会产生一条类似"operation on 'a' may be undefined"的警告信息。</p>
+<hr />
+<p>为了避免出现此类问题，一个好主意就是不在子表达式中使用赋值运算符，而是采用一串分离的赋值表达式。例如，上述语句可以改写成如下形式：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</code></pre></div>
+在执行完这些语句后，c的值始终是6.
+除了赋值运算符，仅有自增和自减运算符可以改变操作数。使用这些运算符时，要注意表达式不要依赖特定的计算顺序。在下面的例子中，j有两个可能的值：</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</code></pre></div>
+人们很自然地就会认定j赋值为4。但是，该语句的执行效果是未定义的，j也可能赋值为6。
+这种情况具体如下：</p>
+<ol>
+<li>取出第二个操作数（i的原始值），然后i自增</li>
+<li>取出第一个操作数（i的新值）</li>
+<li>i的原始值和新值相乘，结果为6。</li>
+</ol>
+<p>”取出“变量意味着从内存中获取它的值。变量意味着从内存中获取它的值。变量的后续变化不会影响已取出的值，因为已取出的值通常存储在CPU中，称为寄存器（18.2节）的一个特殊位置。</p>
+<hr />
+<center>未定义的行为</center>
+<p>根据C标准，类似c = (b = a + 2) - (a = 1);和j = i * i++;这样的语句会导致“未定义的行为”（undefined behavior），这跟4.1节中讲的由实现定义的行为是不同的。当程序中出现未定义的行为时，后果是不可预料的。不同的编译器给出的编译结果可能是不同的，但这还不是唯一可能发生的事情：首先程序可能无法通过编译，就算通过了编译也可能无法运行，就算可以运行也有可能崩溃、不稳定或者产生无意义的结果。换句话说，应该像躲避瘟疫一样避免未定义的行为。</p>
+<h2 id="45">4.5 表达式语句<a class="headerlink" href="#45" title="Permanent link">&para;</a></h2>
+<p>C语言有一条不同寻常的规则，那就是任何表达式都可以用作语句。换句话说，不论表达式是什么类型、计算什么结果，我们都可以通过在后面添加分号将其转换成语句。例如，可以把表达式++i转换成语句
+<div class="highlight"><pre><span></span><code><span class="o">++</span><span class="n">i</span><span class="p">;</span>
+</code></pre></div>
+执行这条语句时，i先进行自增，然后把新产生的i值取出（与放在表达式中的效果一样）。但是，因为++i不是更长的表达式的一部分，所以它的值会被丢弃，执行下一条语句。（当然，对i的改变是持久的。）
+因为会丢掉++i的值，所以除非表达式有副作用，否则将表达式用作语句并没有什么意义。一起来看看下面的3个例子。
+在第一个例子中，i存储了1，然后取出i的新值，但是未使用：
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+在第二个例子中，取出i的值但没有使用，随后i进行自减：
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="o">--</span><span class="p">;</span>
+</code></pre></div>
+在第三个例子中，计算出表达式i*j-1的值后丢弃：
+<div class="highlight"><pre><span></span><code><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+</code></pre></div>
+因为i和j没有变化，所以这条语句没有任何作用。</p>
+<hr />
+<p>键盘上的误操作很容易造成“什么也不做”的表达式语句。例如，本想输入i = j;但是错误的输入了i+j;
+（因为=和+两个字符通常在键盘的同一个健上，所以这种错误发生的频率可能会超乎想象。）某些编译器可能会检查出无意义的表达式语句，会显示类似“statement with no effect”的警告。</p>
+<h2 id="_4">问与答<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>我注意到C语言没有指数运算符。如何求一个数的幂呢？
+通过重复乘法运算，可以进行较为简单的整数次幂运算（i<em>i</em>i是i的立方运算）。如果想计算非整数次幂，可以调用pow函数（23.3节）</p>
+<p>我想把%运算用于浮点数，但程序无法通过编译，该怎么办？
+%运算符要求操作数是整数，这种情况下可以试试fmod函数（23.3节）</p>
+<p>当/运算符和%运算符的操作数是负数时，为什么规则那么复杂？
+规则其实不像看起来那么复杂。C89和C99都要确保（a/b)<em>b+a%b的结果总是等于a（事实上，只要a/b的值是可表示的，C89和C99标准就都能确保这一点）。问题在于C89中，a/b和a%b有两种情况可满足这一相等性：-9/7为-1且-9%7为-2，或者-9/7为-2且-9%7为5
+在第一种情况下，(-9/7)</em>7+-9%7的值为-1<em>7+-2=-9
+在第二种情况下，(-9/7)</em>7+-9%7的值为-2*7+5=-9
+C99出现的时候，大多数CPU都将除法的结果趋零截尾，所以这也被写入这一标准作为唯一允许的结果。</p>
+<p>如果C语言有左值，那他也有右值吗？
+是的，当然。不过在C语言里不叫右值，C语言中的“值”就是“右值”，都是指“表达式的值”。只有左值才可能放在赋值运算符的左侧，否则他就是一个值，或者说右值。当然，C语言不需要“右值”这个概念，C标准也不使用这个概念，这是其他语言，比如C++才使用的概念。</p>
+<p>前面提到：如果v有副作用，那么v+=e不等价于v=v+e。可以解释以下吗？
+计算v+=e只会求一次v的值，而计算v=v+e会求两次v的值。在后一种情况下，对v求值可能引起的任何副作用也都会出现两次。在下面的例子中，i只自增一次：
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</code></pre></div>
+如果用=代替+=，语句变成</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="o">++</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</code></pre></div>
+i的值在别处被修改和使用了，因此上述语句的结果是未定义的。i的值可能会自增两次，但我们无法确定到底会发生什么。</p>
+<hr />
+<p>==C语言为什么提供++和--运算符？==它们是比其他的自增、自减方法执行的快，还是仅仅更便捷？
+C语言从Ken Thompson早期的B语言中继承了++和--。Thompson创造这类运算符是因为他的B语言编译器可以对++i产生比i=i+1更简洁的翻译。这些运算符已经成为C语言根深蒂固的组成部分（事实上，许多最著名的C语言惯用法都依赖于这些运算符）。对于现代编译器而言，使用++和--不会使编译后的程序变得更短小或更快，继续普及这些运算符主要是由于他们的简洁和便利。</p>
+<p>++和--是否可以处理float型变量？
+可以，自增和自减运算也可以用于浮点数，但实际应用中极少采用自增和自减运算符处理float型变量。</p>
+<p>在使用后缀形式的++或--时，何时执行自增或自减操作？
+这是一个非常好的问题，也是一个非常难回答的问题。C语言标准引入了“序列点”的概念，并且指出“应该在前一个序列点和后一个序列点之间对存储的操作数的值进行更新”。在C语言中有多种不同类型的序列点，表达式语句的末尾是其中一种。在表达式语句的末尾，该语句中的所有自增和自减操作都必须执行完毕，否则不能执行下一条语句。
+在后面章节中会遇到的一些运算符（逻辑与、逻辑或、条件和逗号）对序列点也有影响。函数调用也是如此：在函数调用执行之前，所有的实际参数必须全部计算出来。如果实际参数恰巧是含有++或--运算符的表达式，那么必须在调用前进行自增或自减操作。</p>
+<p>丢掉表达式语句的值意味着什么？
+根据定义，一个表达式表示一个值。例如，如果i的值为5，那么计算i+1产生的值为6.在末尾添加分号，把i+1变成语句：
+i+1;
+执行这条语句时，我们计算出了i+1的值，但是我们没有保存这个值（也没有以某种方式使用这个值），因此这个值就丢失了。</p>
+<p>但是类似i=1;这样的语句会如何呢？我没发现有什么东西被丢掉了。
+不要忘记在C语言中=是一种运算符，它可以像其他任何运算符一样产生值。赋值语句
+i=1;
+把1赋值给i。整个表达式的值是1，这个值被丢掉了。编写语句的首要目的是改变i的值，因此丢掉表达式的值不算什么大的损失。</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div id="__comments">
+
+
+
+<!-- <div class="tx-switch">
+<button data-md-color-scheme="default"><code>default</code></button>
+<button data-md-color-scheme="slate"><code>slate</code></button>
+</div>
+
+<script>
+var buttons = document.querySelectorAll("button[data-md-color-scheme]")
+buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+        var attr = this.getAttribute("data-md-color-scheme")
+        document.body.setAttribute("data-md-color-scheme", attr)
+        localStorage.setItem("data-md-color-scheme",attr);
+        updateScheme();
+        })
+})
+</script> -->
+
+
+
+
+
+<h2 ><!-- 评论 -->评论区~</h2>
+
+</br>
+
+
+
+</div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="xuan-insr/discussion"
+        data-repo-id="R_kgDOIUW7XA"
+        data-category="General"
+        data-category-id="DIC_kwDOIUW7XM4CSOC3"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+
+updateScheme();
+
+</script>
+
+<!-- Synchronize Giscus theme with palette -->
+<script>
+var giscus = document.querySelector("script[src*=giscus]")
+
+/* Set palette on initial load */
+var palette = __md_get("__palette")
+if (palette && typeof palette.color === "object") {
+    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    giscus.setAttribute("data-theme", theme) 
+}
+
+/* Register event handlers after documented loaded */
+document.addEventListener("DOMContentLoaded", function() {
+    var ref = document.querySelector("[data-md-component=palette]")
+    ref.addEventListener("change", function() {
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light"
+        localStorage.setItem("data-md-color-scheme", palette.color.scheme === "slate" ? "slate" : "default");
+        /* Instruct Giscus to change theme */
+        var frame = document.querySelector(".giscus-frame")
+        frame.contentWindow.postMessage(
+        { giscus: { setConfig: { theme } } },
+        "https://giscus.app"
+        )
+    }
+    })
+})
+</script>
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC3%E7%AB%A0%20%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第三章 格式化输入输出">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第三章 格式化输入输出
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC5%E7%AB%A0%20%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第五章 选择语句">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第五章 选择语句
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Chenaming
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/chenaming" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:chena_ming@outlook.com" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "navigation.footer", "navigation.tabs", "content.code.annotate", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
